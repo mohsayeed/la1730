@@ -8,6 +8,79 @@
   <title> LA1730 Website</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <style>
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+  </style>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -50,7 +123,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Forms of Media</a></li>
           <li><a class="nav-link scrollto" href="#services">Impact of Media</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio"></a>Influence on Startups</li>
+          <li><a class="nav-link scrollto " href="#portfolio">Influence on Startups</a></li>
           <li><a class="nav-link scrollto" href="#team"></a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -80,20 +153,17 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <div class="row">
-        <div class="col-xl-6">
-          <h1>Bettter digital experience with Presento</h1>
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        </div>
-      </div>
+  <section class="showcase">
+    <div class="video-container">
+      <video src="assets/video/covid.mp4" autoplay muted loop></video>
     </div>
-
-  </section><!-- End Hero -->
-
+    <div class="content">
+      <div class="typewriter">
+        <h1>Spreading the Awareness</h1>
+      </div>
+      <h3>Played Important Role During Pandemic</h3>
+    </div>
+  </section>
   <main id="main">
 
     <!-- ======= Clients Section ======= -->
