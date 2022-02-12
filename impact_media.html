@@ -9,6 +9,11 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!--couraosel-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -27,6 +32,72 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    #hero {
+width: 100%;
+height: 100vh;
+background: url('assets/img/impact/Media_Impact_background.png') top center no-repeat;
+background-size: cover;
+position: relative;
+padding-top: 82px;
+}
+#hero:before {
+content: "";
+background: rgba(0, 0, 0, 0.6);
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+#hero h1 {
+margin: 0;
+font-size: 48px;
+font-weight: 700;
+color: #fff;
+}
+#hero h2 {
+color: #fff;
+margin: 10px 0 0 0;
+font-size: 24px;
+}
+#hero .btn-get-started {
+font-family: "Raleway", sans-serif;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 10px 30px;
+border-radius: 4px;
+transition: 0.5s;
+margin-top: 30px;
+color: #fff;
+background: #e03a3c;
+border: 2px solid #e03a3c;
+}
+#hero .btn-get-started:hover {
+background: transparent;
+border-color: #fff;
+}
+@media (max-width: 768px) {
+#hero {
+  text-align: center;
+  padding-top: 58px;
+}
+#hero h1 {
+  font-size: 28px;
+}
+#hero h2 {
+  font-size: 18px;
+  line-height: 24px;
+}
+}
+@media (max-height: 500px) {
+#hero {
+  height: 120vh;
+}
+}
+  </style>
 
   <!-- =======================================================
   * Template Name: Presento - v3.7.0
@@ -84,9 +155,10 @@
 
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <div class="row">
-        <div class="col-xl-6">
+        <!--<div class="col-xl-6">-->
+          <div class = "center">
           <h1>Impact of Media during COVID</h1>
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          
           
         </div>
       </div>
@@ -155,32 +227,35 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Impact on Public and Society</h2>
-          <p>Magnam dolores commodi suscipit eius consequatur</p>
+          <p>The mass media in India is playing a critical role in distributing COVID-related information to the general people and encouraging them to follow specific safe procedures.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
             <div class="image">
-              <img src="assets/img/impact/media_impact.jpg" class="img-fluid" alt="" width="90%" >
+              <img src="assets/img/impact/Social-Media-Circle-Transparent-Images-PNG.png" class="img-fluid" alt="" width="90%" >
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-              <h3>Voluptatem dignissimos provident quasi corporis</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
+              <!--<h3>Voluptatem dignissimos provident quasi corporis</h3>-->
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+                Social media became an important place to interact during a period of social distance and restricted contact with others. 
+                Social media platforms are intended to bring people together, and they have greatly aided in keeping the world linked during the pandemic. 
               </p>
+              <p>
+                Since many individuals have been ordered to stay at home, they have resorted to social media to keep in touch with friends and family and to pass the time.
+                The time spent on mass media increased during lockdown has increase significantly.
+              </p>
+              <p>
+                Social media has been used by news outlets, organisations, and the general public to spread both valid information and misinformation about the pandemic.
+                The influence of social media panic on people varies according on the gender, age, and degree of education of the individual.
+              </p>
+              <p>
+                The COVID-19 pandemic has had an impact on how the ordinary public, celebrities, world leaders, and professionals use social media. 
+                Social networking sites have been utilised to distribute information as well as provide entertainment and distraction from the pandemic.
+              </p>
+              
             </div>
           </div>
         </div>
@@ -196,31 +271,38 @@
 
         <div class="section-title">
           <h2>Positive Impact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          <!--<p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. 
+            Et nemo qui impedit suscipit alias ea.</p>-->
         </div>
 
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1">
             <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
               <i class="bx bx-receipt"></i>
-              <h4>Est labore ad</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              <!--<h4>Est labore ad</h4>-->
+              <p>The internet can be used to distribute a public awareness campaign designed to educate adults on helpful skills that can assist children and teenagers cope with the pandemic's problems</p>
             </div>
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-cube-alt"></i>
-              <h4>Harum esse qui</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <!--<h4>Harum esse qui</h4>-->
+              <p>The CDC, WHO, medical journals, and health care organisations have been updating and spreading information across numerous platforms with partnerships with Facebook, Google Scholar, TikTok.
+                Based upon the information and directions being distributed through the media, frontline workers are working diligently, and government agencies are more active. 
+                </p>
             </div>
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
               <i class="bx bx-images"></i>
-              <h4>Aut occaecati</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              <!--<h4>Aut occaecati</h4>-->
+              <p>During a pandemic, the mass media is a potent instrument for halting disease spread, and it has a significant impact on people's behaviour</p>
             </div>
+            <!--
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
               <i class="bx bx-shield"></i>
               <h4>Beatae veritatis</h4>
               <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
             </div>
+            -->
+            
           </div>
 
           
@@ -234,7 +316,7 @@
           <div class="col-lg-6" data-aos="fade-left">
             
             <div class="image">
-            <img src="assets/img/impact/social_media.png" class="img-fluid" alt="" class="w3-image">
+            <img src="assets/img/impact/social_media_positive.png" class="img-fluid" alt="" class="w3-image">
           </div>     
           
         </div>
@@ -255,7 +337,8 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Negative Impact on Public and Society</h2>
-          <p>Magnam dolores commodi suscipit eius consequatur</p>
+          <p>People can stay safe, informed, and connected thanks to technological improvements and social media. 
+            The same instruments, on the other hand, enable and amplify the current infodemic, which continues to undermine global response and risk pandemic control measures.</p>
         </div>
 
         <div class="row">
@@ -269,6 +352,9 @@
           </div>
           <div class="col-lg-6" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <!--
+
+            
               <h3>Voluptatem dignissimos provident quasi corporis</h3>
               <p class="fst-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -279,10 +365,20 @@
                 <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                 <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
               </ul>
+            -->
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+                The rapid spread of the coronavirus pandemic has many businesses shut down and many workers either out of work or working from home.
+              </p>
+              <p>
+                The spread of misinformation, aided by social media and other digital platforms, has proven to be a greater threat to global public health than the virus itself, as the COVID-19 pandemic has shown. 
+                Exaggeration and misunderstanding of COVID-related news were spread by TV news and social media, causing alarm among the general people.
+              </p>
+              <p>
+                Many platforms struggled to filter what was uploaded and shared quickly enough to spread of false information. 
+              </p>
+              <p>
+                This was owing to an increase in AI use, since many human moderators were sent home during shelter in place orders and faced contract constraints, making it impossible for them to continue working from home
+                This approach failed to limit the spread of COVID-19 falsehoods and also removed other useful material and links to articles.
               </p>
             </div>
           </div>
@@ -292,6 +388,7 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Tabs Section ======= -->
+    <!--
     <section id="tabs" class="tabs">
       <div class="container" data-aos="fade-up">
 
@@ -423,11 +520,13 @@
         </div>
 
       </div>
-    </section><!-- End Tabs Section -->
+    </section>
+    --><!-- End Tabs Section -->
 
     
 
     <!-- ======= Portfolio Section ======= -->
+    <!--
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
@@ -578,80 +677,62 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>--><!-- End Portfolio Section -->
 
     
+    
 
-    <!-- slides statistics-->
-    <!-- Container for the image gallery -->
     <div class="container">
-
       <div class="section-title">
         <h2>Digital Media Usage in Lockdown</h2>
         <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p> -->
-      </div>
-
-      <!-- Full-width images with number text -->
-      <div class="mySlides">
-        <div class="numbertext">1 / 6</div>
-          <img src="assets/img/digitalMedia/websites-usage.JPG" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-          <img src="assets/img/digitalMedia/news-usage.JPG" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-          <img src="assets/img/digitalMedia/entertainment-usage.JPG" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-          <img src="assets/img/digitalMedia/apps-usage.JPG" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">5 / 6</div>
-          <img src="assets/img/digitalMedia/apps2-usage.JPG" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-          <img src="assets/img/digitalMedia/apps3-usage.JPG" style="width:50%">
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <!-- Image text -->
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-
-      <!-- Thumbnail images -->
-      <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="assets/img/digitalMedia/websites-usage.JPG" style="width:100%" onclick="currentSlide(1)" alt="websites usage">
+      </div>  
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="assets/img/digitalMedia/news-usage.JPG" alt="News" style="width:100%;">
+          </div>
+    
+          <div class="item">
+            <img src="assets/img/digitalMedia/entertainment-usage.JPG" alt="Entertainment" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="assets/img/digitalMedia/websites-usage.JPG" alt="website" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="assets/img/digitalMedia/apps-usage.JPG" alt="App Usage" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="assets/img/digitalMedia/apps2-usage.JPG" alt="New york" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="assets/img/digitalMedia/apps3-usage.JPG" alt="New york" style="width:100%;">
+          </div>
         </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/img/digitalMedia/news-usage.JPG" style="width:100%" onclick="currentSlide(2)" alt="news usage">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/img/digitalMedia/entertainment-usage.JPG" style="width:100%" onclick="currentSlide(3)" alt="Entertainment Usage">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/img/digitalMedia/apps-usage.JPG" style="width:100%" onclick="currentSlide(4)" alt="App Usage1">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/img/digitalMedia/apps2-usage.JPG" style="width:100%" onclick="currentSlide(5)" alt="App Usage2">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/img/digitalMedia/apps3-usage.JPG" style="width:50%" onclick="currentSlide(6)" alt="App Usage3">
-        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
     <p>&nbsp;>&nbsp;</p>
