@@ -412,7 +412,9 @@ section {
 }
 .section-bg:before {
   content: "";
-  background: #1b1b1b;
+  background:black;
+  background-color: #130f40;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
   position: absolute;
   bottom: 60px;
   top: 60px;
@@ -1685,7 +1687,9 @@ Slides
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #1b1b1b;
+  background:black;
+  background-color: #130f40;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
