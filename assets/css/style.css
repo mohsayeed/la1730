@@ -2332,11 +2332,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: orange;        /* color of the tracking area */
+  background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+         /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: blue;    /* color of the scroll thumb */
+  background-color: rgb(7, 7, 51);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid orange;  /* creates padding around scroll thumb */
+  border: 3px solid #bdd4e7;  /* creates padding around scroll thumb */
 }
